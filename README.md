@@ -1,2 +1,2 @@
 # window_artifacts_tests
-Support script for testing using various tools
+Support scripts for testing using various tools
