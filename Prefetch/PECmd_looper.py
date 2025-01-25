@@ -1,4 +1,4 @@
-# Python 3 Script used for testing behaviour in Microsoft Windows Prefetch files.
+# Python 3 Script used for testing behavior in Microsoft Windows Prefetch files.
 # Please note that script uses tool PECmd created by Eric Zimmerman (saericzimmerman@gmail.com) Source:
 # https://github.com/EricZimmerman/PECmd
 #
@@ -427,8 +427,8 @@ def move_specific_files(analysis_search, folder_path, counter):
         print(f"Error: Source folder not found: {folder_path}")
         return
 
-    if not os.path.exists(folder_path+f"//{counter}"):
-        os.makedirs(folder_path+f"//{counter}")  # Create destination if it doesn't exist
+    if not os.path.exists(folder_path+f"\\{counter}"):
+        os.makedirs(folder_path+f"\\{counter}")  # Create destination if it doesn't exist
         logging.info(f'Created destination folder: {folder_path}+"\\"{counter}')
 
     file_count = 0
@@ -438,12 +438,12 @@ def move_specific_files(analysis_search, folder_path, counter):
 
         # Check if it's a file and matches the allowed extensions
         if os.path.isfile(file_path) and file.lower().endswith(suffix):
-            destination_path = os.path.join(folder_path+f"//{counter}", file)
+            destination_path = os.path.join(folder_path+f"\\{counter}", file)
 
             try:
-                shutil.move(file_path, folder_path+f"//{counter}")
-                logging.info(f"Moved: {file_path} -> {folder_path+f"//{counter}"}")
-                print(f"Moved: {file} -> {folder_path+f"//{counter}"}")
+                shutil.move(file_path, folder_path+f"\\{counter}")
+                logging.info(f"Moved: {file_path} -> {folder_path+f"\\{counter}"}")
+                print(f"Moved: {file} -> {folder_path+f"\\{counter}"}")
                 file_count += 1
             except Exception as e:
                 logging.error(f"Error moving {file_path}: {e}")
@@ -510,7 +510,7 @@ def main():
     #TEST SUBJECT PROGRAM
     program_path = r"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"  # Change this path if needed
     program_name = "chrome.exe" #Check in task manager
-    counter = 0 #ON WHAT LOOP IS SCRIPT - Can be adjusted to represent actual run count
+    counter = 4 #ON WHAT LOOP IS SCRIPT - Can be adjusted to represent actual run count
 
 
     #MENU
@@ -559,7 +559,7 @@ def main():
         menu_input = get_menu()
 
     elif menu_input == "delete":
-        logging.info("Compare JSON files (Directories and Files Loaded)...")
+        logging.info("Delete Prefetch files and json output files...")
         delete_all_files(delete_files_in_folder_path)
         logging.info("Deletion completed...")
         menu_input = get_menu()
@@ -584,7 +584,7 @@ def main():
         menu_input = get_menu()
 
     elif menu_input == "9":
-        #x5 LOOP - addjust number in line below  
+        #10 LOOP  
         while counter <= 5: 
             logging.warning(f"### RUN {counter} ###")
 
