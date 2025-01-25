@@ -23,7 +23,7 @@ It utilizes the program PECmd for parsing Prefetch files.
 - delete - Delete all files in the folder
 - X - Exit
 
-Note: Option 9 can crush Google Chrome.
+**Note:** Option 9 can crush Google Chrome.
 
 ## Paramteters to set
 
