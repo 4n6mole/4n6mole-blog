@@ -8,7 +8,7 @@ It utilizes the program PECmd for parsing Prefetch files.
 
 - Python 3
 - psutil Python module
-- script parameters setup
+- Script parameters setup: [Read](https://github.com/4n6mole/window_artifacts_tests/tree/main/Prefetch#paramteters-to-set)
 
 ## Script options (MENU)
 
