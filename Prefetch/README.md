@@ -13,13 +13,13 @@ It utilizes the program PECmd for parsing Prefetch files.
 ## Script options (MENU)
 
 - 0 - Copy Prefetch files from the default location
-- 1 - Only analyze
-- 2 - Only extract from json
-- 3 - Analyze and extract
-- 4 - View JSON files
-- 5 - Compare JSON files (References)
-- 8 - SpeedTest (0->1->2->delete)
-- 9 - SpeedTest x 10 loops (starts and exits Chrome)
+- 1 - Only analyze - Uses PECmd tool to parse Prefetch files and saves the output as JSON files
+- 2 - Only extract from JSON - Reads PECmd tool results and saves same in the log file
+- 3 - Analyze and extract - Combines first and second option
+- 4 - View JSON files - Displays the content in terminal
+- 5 - Compare JSON files (References) - Tries to compare referenced files between two files (DUMMY WAY)
+- 8 - SpeedTest (0->1->2->delete) - Does multiple actions in flow
+- 9 - SpeedTest x 10 loops (starts and exits Chrome, 0->1->2->moves files to new folder,deletes)
 - delete - Delete all files in the folder
 - X - Exit
 
