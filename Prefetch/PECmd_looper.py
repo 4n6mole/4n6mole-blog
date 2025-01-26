@@ -459,18 +459,17 @@ def move_specific_files(analysis_search, folder_path, counter):
 def get_menu():
     while True:
 
-        prompt = prompt="""Options: 
-                      
-                       0 - Copy Prefetch files from default location
-                       1 - Only analyze
-                       2 - Only extract from json
-                       3 - Analyze and extract
-                       4 - View json files
-                       5 - Compare JSON files (References)
-                       8 - SpeedTest (0->1->2->delete) WARN!!
-                       9 - SpeedTest x 10 (with looping)
-                       X - Exit
-                       Enter: """
+        prompt="""Options:     
+                0 - Copy Prefetch files from default location
+                1 - Only analyze
+                2 - Only extract from json
+                3 - Analyze and extract
+                4 - View json files
+                5 - Compare JSON files (References)
+                8 - SpeedTest (0->1->2->delete) WARN!!
+                9 - SpeedTest x 10 (with looping)
+                X - Exit
+                Enter: """
 
         user_input = input(prompt)
         print(user_input)
@@ -515,74 +514,48 @@ def main():
 
     #MENU
     menu_input = get_menu() # Call menu - Option 9 uses hidden delete option, it deletes content (.pf and .json files) of folder specified in variable delete_files_in_folder_path
+
+    while menu_input != "X":                   
                        
-                       
-    if menu_input == "X":
-        exit
-    elif menu_input == "0":
-        logging.info("Fetching Prefetch files...")
-        copy_prefetch_files(source, destination, pfcopy_search)
-        logging.info("Copy operation completed...")
+        if menu_input == "0":
+            logging.info("Fetching Prefetch files...")
+            copy_prefetch_files(source, destination, pfcopy_search)
+            logging.info("Copy operation completed...")
 
-    elif menu_input == "1":
-        logging.info("Analyzing Prefetch files...")
-        process_files(process_search, folder, cmd_template)
-        logging.info("Analysis completed...")
+        elif menu_input == "1":
+            logging.info("Analyzing Prefetch files...")
+            process_files(process_search, folder, cmd_template)
+            logging.info("Analysis completed...")
 
-    elif menu_input == "2": 
-        logging.info("Extracting data from json files...")
-        process_json_files(analysis_search, folder, counter=0)
-        logging.info("Extracting from JSON files completed...")
+        elif menu_input == "2": 
+            logging.info("Extracting data from json files...")
+            process_json_files(analysis_search, folder, counter=0)
+            logging.info("Extracting from JSON files completed...")
 
-    elif menu_input == "3":
-        logging.info("Analyzing Prefetch files...")
-        process_files(process_search, folder, cmd_template)
-        logging.info("Analysis completed...")
-        logging.info("Extracting data from json files...")
-        process_json_files(analysis_search, folder, counter=0)
-        logging.info("Extracting from JSON files completed...")
+        elif menu_input == "3":
+            logging.info("Analyzing Prefetch files...")
+            process_files(process_search, folder, cmd_template)
+            logging.info("Analysis completed...")
+            logging.info("Extracting data from json files...")
+            process_json_files(analysis_search, folder, counter=0)
+            logging.info("Extracting from JSON files completed...")
 
-    elif menu_input == "4":
-        logging.info("Extracting data from json files...")
-        view_json_files(analysis_search, folder)
-        logging.info("Extraction completed...")
-    
-    elif menu_input == "5":
-        logging.info("Compare JSON files (Directories and Files Loaded)...")
-        compare_json_files(analysis_search, folder)
-        logging.info("Comparison completed...")
+        elif menu_input == "4":
+            logging.info("Extracting data from json files...")
+            view_json_files(analysis_search, folder)
+            logging.info("Extraction completed...")
+        
+        elif menu_input == "5":
+            logging.info("Compare JSON files (Directories and Files Loaded)...")
+            compare_json_files(analysis_search, folder)
+            logging.info("Comparison completed...")
 
-    elif menu_input == "delete":
-        logging.info("Delete Prefetch files and json output files...")
-        delete_all_files(delete_files_in_folder_path)
-        logging.info("Deletion completed...")
+        elif menu_input == "delete":
+            logging.info("Delete Prefetch files and json output files...")
+            delete_all_files(delete_files_in_folder_path)
+            logging.info("Deletion completed...")
 
-    elif menu_input == "8":
-
-        logging.info("Fetching Prefetch files...")
-        copy_prefetch_files(source, destination, pfcopy_search)
-        logging.info("Copy operation completed...")
-
-        logging.info("Analyzing Prefetch files...")
-        process_files(process_search, folder, cmd_template)
-        logging.info("Analysis completed...")
-
-        logging.info("Extracting data from json files...")
-        process_json_files(analysis_search, folder, counter=0)
-        logging.info("Extracting from JSON files completed...")
-
-        logging.info("Compare JSON files (Directories and Files Loaded)...")
-        delete_all_files(delete_files_in_folder_path)
-        logging.info("Deletion completed...")
-
-    elif menu_input == "9":
-        #10 LOOP  
-        while counter <= 5: 
-            logging.warning(f"### RUN {counter} ###")
-
-            logging.info("Start/Close program...")
-            start_and_close_program(program_path,program_name)
-            logging.info("Start/Close completed...")
+        elif menu_input == "8":
 
             logging.info("Fetching Prefetch files...")
             copy_prefetch_files(source, destination, pfcopy_search)
@@ -593,19 +566,51 @@ def main():
             logging.info("Analysis completed...")
 
             logging.info("Extracting data from json files...")
-            process_json_files(analysis_search, folder,counter)
+            process_json_files(analysis_search, folder, counter=0)
             logging.info("Extracting from JSON files completed...")
-            
-            logging.info("Move Prefetch files...")
-            move_specific_files(analysis_search, destination, counter)
-            logging.info("Move completed...")
 
             logging.info("Compare JSON files (Directories and Files Loaded)...")
             delete_all_files(delete_files_in_folder_path)
             logging.info("Deletion completed...")
-            time.sleep(10)
 
-            counter=counter+1
+        elif menu_input == "9":
+            #10 LOOP  
+            while counter <= 5: 
+                logging.warning(f"### RUN {counter} ###")
+
+                logging.info("Start/Close program...")
+                start_and_close_program(program_path,program_name)
+                logging.info("Start/Close completed...")
+
+                logging.info("Fetching Prefetch files...")
+                copy_prefetch_files(source, destination, pfcopy_search)
+                logging.info("Copy operation completed...")
+
+                logging.info("Analyzing Prefetch files...")
+                process_files(process_search, folder, cmd_template)
+                logging.info("Analysis completed...")
+
+                logging.info("Extracting data from json files...")
+                process_json_files(analysis_search, folder,counter)
+                logging.info("Extracting from JSON files completed...")
+                
+                logging.info("Move Prefetch files...")
+                move_specific_files(analysis_search, destination, counter)
+                logging.info("Move completed...")
+
+                logging.info("Compare JSON files (Directories and Files Loaded)...")
+                delete_all_files(delete_files_in_folder_path)
+                logging.info("Deletion completed...")
+                time.sleep(10)
+
+                counter=counter+1
+
+        else:
+            print("Invalid option...")
+        
+        menu_input = get_menu()
+
+    print("Hope you had fun...")
 
 if __name__ == "__main__":
 
