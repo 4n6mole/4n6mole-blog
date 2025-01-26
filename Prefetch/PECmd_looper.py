@@ -523,19 +523,16 @@ def main():
         logging.info("Fetching Prefetch files...")
         copy_prefetch_files(source, destination, pfcopy_search)
         logging.info("Copy operation completed...")
-        menu_input = get_menu()
 
     elif menu_input == "1":
         logging.info("Analyzing Prefetch files...")
         process_files(process_search, folder, cmd_template)
         logging.info("Analysis completed...")
-        menu_input = get_menu()
 
     elif menu_input == "2": 
         logging.info("Extracting data from json files...")
         process_json_files(analysis_search, folder, counter=0)
         logging.info("Extracting from JSON files completed...")
-        menu_input = get_menu()
 
     elif menu_input == "3":
         logging.info("Analyzing Prefetch files...")
@@ -544,25 +541,21 @@ def main():
         logging.info("Extracting data from json files...")
         process_json_files(analysis_search, folder, counter=0)
         logging.info("Extracting from JSON files completed...")
-        menu_input = get_menu()
 
     elif menu_input == "4":
         logging.info("Extracting data from json files...")
         view_json_files(analysis_search, folder)
         logging.info("Extraction completed...")
-        menu_input = get_menu()
     
     elif menu_input == "5":
         logging.info("Compare JSON files (Directories and Files Loaded)...")
         compare_json_files(analysis_search, folder)
         logging.info("Comparison completed...")
-        menu_input = get_menu()
 
     elif menu_input == "delete":
         logging.info("Delete Prefetch files and json output files...")
         delete_all_files(delete_files_in_folder_path)
         logging.info("Deletion completed...")
-        menu_input = get_menu()
 
     elif menu_input == "8":
 
@@ -581,7 +574,6 @@ def main():
         logging.info("Compare JSON files (Directories and Files Loaded)...")
         delete_all_files(delete_files_in_folder_path)
         logging.info("Deletion completed...")
-        menu_input = get_menu()
 
     elif menu_input == "9":
         #10 LOOP  
