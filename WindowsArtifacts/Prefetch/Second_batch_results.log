@@ -1,0 +1,48 @@
+2025-01-25 17:33:38,021 - WARNING - ### RUN 1 ###
+2025-01-25 17:33:38,021 - WARNING - CHROME.EXE-AED7BA3C | Last Run: 2025-01-25 16:30:56 | Run Count: 1 | Dir Count: 136 | File Count: 299
+2025-01-25 17:33:38,022 - WARNING - CHROME.EXE-AED7BA3D | Last Run: 2025-01-25 16:31:07 | Run Count: 2 | Dir Count: 10 | File Count: 65
+2025-01-25 17:33:38,022 - WARNING - CHROME.EXE-AED7BA3E | Last Run: 2025-01-25 16:30:57 | Run Count: 4 | Dir Count: 11 | File Count: 77
+2025-01-25 17:33:38,022 - WARNING - CHROME.EXE-AED7BA40 | Last Run: 2025-01-25 16:30:56 | Run Count: 1 | Dir Count: 21 | File Count: 41
+2025-01-25 17:33:38,022 - WARNING - CHROME.EXE-AED7BA47 | Last Run: 2025-01-25 16:30:56 | Run Count: 1 | Dir Count: 33 | File Count: 81
+2025-01-25 17:33:38,023 - WARNING - CHROME.EXE-AED7BA49 | Last Run: 2025-01-25 16:30:56 | Run Count: 1 | Dir Count: 23 | File Count: 49
+2025-01-25 17:33:38,023 - WARNING - CHROME.EXE-AED7BA4A | Last Run: 2025-01-25 16:31:10 | Run Count: 1 | Dir Count: 18 | File Count: 64
+
+
+2025-01-25 17:35:03,780 - WARNING - ### RUN 2 ###
+2025-01-25 17:35:03,781 - WARNING - CHROME.EXE-AED7BA3C | Last Run: 2025-01-25 16:34:14 | Run Count: 2 | Dir Count: 184 | File Count: 444
+2025-01-25 17:35:03,781 - WARNING - CHROME.EXE-AED7BA3D | Last Run: 2025-01-25 16:34:15 | Run Count: 3 | Dir Count: 10 | File Count: 65
+2025-01-25 17:35:03,782 - WARNING - CHROME.EXE-AED7BA3E | Last Run: 2025-01-25 16:34:15 | Run Count: 8 | Dir Count: 11 | File Count: 77
+2025-01-25 17:35:03,782 - WARNING - CHROME.EXE-AED7BA40 | Last Run: 2025-01-25 16:34:14 | Run Count: 2 | Dir Count: 20 | File Count: 44
+2025-01-25 17:35:03,782 - WARNING - CHROME.EXE-AED7BA47 | Last Run: 2025-01-25 16:34:14 | Run Count: 2 | Dir Count: 41 | File Count: 96
+2025-01-25 17:35:03,783 - WARNING - CHROME.EXE-AED7BA49 | Last Run: 2025-01-25 16:30:56 | Run Count: 1 | Dir Count: 23 | File Count: 49
+2025-01-25 17:35:03,783 - WARNING - CHROME.EXE-AED7BA4A | Last Run: 2025-01-25 16:31:10 | Run Count: 1 | Dir Count: 18 | File Count: 64
+
+
+2025-01-25 17:37:31,146 - WARNING - ### RUN 3 ###
+2025-01-25 17:37:31,147 - WARNING - CHROME.EXE-AED7BA3C | Last Run: 2025-01-25 16:36:45 | Run Count: 3 | Dir Count: 184 | File Count: 451
+2025-01-25 17:37:31,147 - WARNING - CHROME.EXE-AED7BA3D | Last Run: 2025-01-25 16:36:48 | Run Count: 8 | Dir Count: 11 | File Count: 69
+2025-01-25 17:37:31,147 - WARNING - CHROME.EXE-AED7BA3E | Last Run: 2025-01-25 16:36:46 | Run Count: 10 | Dir Count: 11 | File Count: 77
+2025-01-25 17:37:31,147 - WARNING - CHROME.EXE-AED7BA40 | Last Run: 2025-01-25 16:36:45 | Run Count: 3 | Dir Count: 21 | File Count: 47
+2025-01-25 17:37:31,148 - WARNING - CHROME.EXE-AED7BA47 | Last Run: 2025-01-25 16:36:45 | Run Count: 3 | Dir Count: 25 | File Count: 96
+2025-01-25 17:37:31,148 - WARNING - CHROME.EXE-AED7BA49 | Last Run: 2025-01-25 16:36:45 | Run Count: 2 | Dir Count: 23 | File Count: 49
+2025-01-25 17:37:31,148 - WARNING - CHROME.EXE-AED7BA4A | Last Run: 2025-01-25 16:31:10 | Run Count: 1 | Dir Count: 18 | File Count: 64
+
+
+2025-01-25 17:40:07,033 - WARNING - ### RUN 4 ###
+2025-01-25 17:40:07,034 - WARNING - CHROME.EXE-AED7BA3C | Last Run: 2025-01-25 16:38:19 | Run Count: 4 | Dir Count: 188 | File Count: 472
+2025-01-25 17:40:07,035 - WARNING - CHROME.EXE-AED7BA3D | Last Run: 2025-01-25 16:38:22 | Run Count: 12 | Dir Count: 11 | File Count: 69
+2025-01-25 17:40:07,036 - WARNING - CHROME.EXE-AED7BA3E | Last Run: 2025-01-25 16:38:19 | Run Count: 11 | Dir Count: 11 | File Count: 77
+2025-01-25 17:40:07,036 - WARNING - CHROME.EXE-AED7BA40 | Last Run: 2025-01-25 16:38:19 | Run Count: 4 | Dir Count: 21 | File Count: 50 <-
+2025-01-25 17:40:07,036 - WARNING - CHROME.EXE-AED7BA47 | Last Run: 2025-01-25 16:38:19 | Run Count: 4 | Dir Count: 25 | File Count: 96 <-
+2025-01-25 17:40:07,037 - WARNING - CHROME.EXE-AED7BA49 | Last Run: 2025-01-25 16:38:19 | Run Count: 3 | Dir Count: 23 | File Count: 49 
+2025-01-25 17:40:07,039 - WARNING - CHROME.EXE-AED7BA4A | Last Run: 2025-01-25 16:38:26 | Run Count: 2 | Dir Count: 18 | File Count: 64
+
+
+2025-01-25 17:52:54,866 - WARNING - ### RUN 5 ###
+2025-01-25 17:52:54,875 - WARNING - CHROME.EXE-AED7BA3C | Last Run: 2025-01-25 16:38:19 | Run Count: 4 | Dir Count: 188 | File Count: 472
+2025-01-25 17:52:54,881 - WARNING - CHROME.EXE-AED7BA3D | Last Run: 2025-01-25 16:51:24 | Run Count: 13 | Dir Count: 11 | File Count: 69
+2025-01-25 17:52:54,882 - WARNING - CHROME.EXE-AED7BA3E | Last Run: 2025-01-25 16:51:24 | Run Count: 12 | Dir Count: 11 | File Count: 77
+2025-01-25 17:52:54,882 - WARNING - CHROME.EXE-AED7BA40 | Last Run: 2025-01-25 16:51:24 | Run Count: 5 | Dir Count: 21 | File Count: 53
+2025-01-25 17:52:54,883 - WARNING - CHROME.EXE-AED7BA47 | Last Run: 2025-01-25 16:51:24 | Run Count: 5 | Dir Count: 25 | File Count: 96
+2025-01-25 17:52:54,883 - WARNING - CHROME.EXE-AED7BA49 | Last Run: 2025-01-25 16:51:24 | Run Count: 4 | Dir Count: 23 | File Count: 49
+2025-01-25 17:52:54,886 - WARNING - CHROME.EXE-AED7BA4A | Last Run: 2025-01-25 16:51:33 | Run Count: 3 | Dir Count: 18 | File Count: 64
