@@ -1,1 +1,1 @@
-#Rapid OSINT VM script setup
+# Rapid OSINT VM script setup
