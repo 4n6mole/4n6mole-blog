@@ -1,2 +1,2 @@
-# window_artifacts_tests
-Support scripts for testing using various tools
+# 4n6mole Blog related scripts
+Support scripts for testing and setup related to https://medium.com/@dforensic.mole blog
